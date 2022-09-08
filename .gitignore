@@ -1,13 +1,10 @@
-*.swp
+# macOS
+.DS_Store
 
 # Ruby Gem
 *.gem
 .bundle
-Gemfile.lock
 vendor/bundle
-
-# macOS
-.DS_Store
 
 # Jekyll generated files
 .jekyll-cache
