@@ -1,0 +1,27 @@
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    
+    &-menu {
+      display: flex;
+      list-style: none;
+
+      &-item {
+        margin-left: 20px;
+        &:first-of-type {
+          margin-left: 0;
+        }
+        
+        a {
+          color: $uiAccent;
+        }
+
+        .icon {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }

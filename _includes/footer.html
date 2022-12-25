@@ -1,0 +1,8 @@
+<footer class="site-footer">
+    <p class="site-footer-copyright">© Emanuel Mateiuc {{ 'now' | date: "%Y" }}</p>
+    <ul class="site-footer-menu">
+        {% for item in site.data.social %}
+        <li class="site-footer-menu-item"><a href="{{ item.link }}">{{ item.icon }}</a></li>
+        {% endfor %}
+      </ul>
+</footer>

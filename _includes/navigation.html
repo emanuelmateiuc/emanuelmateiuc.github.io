@@ -1,0 +1,11 @@
+<div class="site-nav-container">
+  <nav class="site-nav">
+      <a class="site-nav-logo" href="/">Emanuel Mateiuc</a>
+      <p class="nav-divider">•</p>
+      <ul class="site-nav-menu">
+        {% for item in site.data.menu %}
+        <li class="site-nav-menu-item"><a class="{% if page.url == item.link %}active{% endif %}" href="{{ item.link }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+  </nav>
+</div>
